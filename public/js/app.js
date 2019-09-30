@@ -51,4 +51,28 @@ message_user.addEventListener('keypress', function(){
 socket.on('typing', function(data){
     events.innerHTML = `<p><em>${data} is typing...</em></p>`;
 });
+$(document).ready(function () {
+    
+    $("#send").click(function () {
+       
+        if (!!navigator.geolocation) {
+           
+            navigator.geolocation.getCurrentPosition(
+                   
+                    function (position) {
+                      
+                        $("#nlat").text('Latitud: ' + position.coords.latitude);
+                        $("#nlon").text('Longitud: ' + position.coords.longitude);
+                    },
+                   
+                    function () {
+                        window.alert("nav no permitido");
+                    }
+            );
+        }
+    });
+});
+let date= new Date();
+document.getElementById("demo").innerHTML = date;
+
 
