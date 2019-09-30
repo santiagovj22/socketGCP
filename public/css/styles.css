@@ -1,0 +1,50 @@
+body{
+    background-color: #000000;
+}
+
+#container{
+    width: 100%;
+}
+
+#chat-user{
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+#header-chat{
+    width: 100%;
+    height: 100px;
+    background-color: #efefef;
+}
+#events{
+    color:#aaa;
+    padding: 14px 0;
+    margin: 0 20px;
+}
+#events p{
+    padding:14px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color:#555;
+}
+#messages{
+    color:#aaa;
+    padding: 14px 0;
+    margin: 0 20px;
+}
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border:0;
+    display: block;
+    width: 100%;
+}
+button{
+    background: #07a514;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding:12px 0;
+    border-radius: 0 0 2px 2px;
+    display: inline-block;
+    width: 100%;
+}
